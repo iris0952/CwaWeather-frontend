@@ -287,7 +287,7 @@
     </div>
 
     <script>
-        const API_URL = "https://cami-weather.zeabur.app/api/weather/kaohsiung";
+        const API_URL = "https://cami-weather.zeabur.app/api/weather/kaohsiung/v1/rest/datastore/F-D0047-079";
 
         function getWeatherIcon(weather) {
             if (!weather) return "🌤️";
@@ -301,7 +301,7 @@
 
         function getAdvice(rainProb, maxTemp) {
             let rainIcon = "🌂";
-            let rainText = "放心出門去！";
+            let rainText = "放心出門囉";
 
             if (parseInt(rainProb) > 30) {
                 rainIcon = "☂️";
