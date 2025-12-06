@@ -301,22 +301,22 @@
 
         function getAdvice(rainProb, maxTemp) {
             let rainIcon = "🌂";
-            let rainText = "放心出門去～";
+            let rainText = "放心出門去！";
 
             if (parseInt(rainProb) > 30) {
                 rainIcon = "☂️";
-                rainText = "下雨機率大，記得帶傘！";
+                rainText = "記得帶傘！";
             }
 
             let clothIcon = "👕";
-            let clothText = "舒適的溫度，適合舒適穿搭";
+            let clothText = "舒適穿搭";
 
             if (parseInt(maxTemp) >= 28) {
                 clothIcon = "🎽";
-                clothText = "有點熱，短袖出發";
+                clothText = "熱！短袖出發";
             } else if (parseInt(maxTemp) <= 20) {
                 clothIcon = "🧥";
-                clothText = "天冷了，加件外套";
+                clothText = "加件外套";
             }
 
             return { rainIcon, rainText, clothIcon, clothText };
